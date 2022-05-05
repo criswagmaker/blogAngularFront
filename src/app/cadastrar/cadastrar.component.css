@@ -1,13 +1,13 @@
 #img-bg{
-  background-image: url(../../assets/img/transferir.jpg);
+  background-image: url(../../assets/img/irelia.jpeg);
 
   min-height: 695px;
 
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.btn-hyperblue{
-  background-color:#4B0082;
+.btn-ireliayellow{
+  background-color: #B87639;
 }
