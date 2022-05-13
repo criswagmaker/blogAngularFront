@@ -32,8 +32,9 @@ export class InicioComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    window.scroll(0, 0);
+
     if (environment.token == '') {
-      /* alert('Sessão expirada, faça o login novamente'); */
       this.router.navigate(['/entrar']);
     }
 
@@ -60,7 +61,7 @@ export class InicioComponent implements OnInit {
     });
   }
 
-  findByIdUsuario() {
+  findByIdUser() {
     this.authService.getByIdUser(this.idUsuario).subscribe((resp: Usuario) => {
       this.usuario = resp;
     });
